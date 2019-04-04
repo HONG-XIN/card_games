@@ -87,7 +87,7 @@ class Game:
 		nominators = []
 		for p in players:
 			score = self.players[p].getScore()
-			print "{} -> Score: {} -> ".format(p, score),
+			print("{} -> Score: {} -> ".format(p, score)),
 			self.players[p].displayCards()
 			if (score <= 21):
 				nominators.append((p, score))
@@ -163,7 +163,7 @@ class Game:
 						print("Dealer stops.")
 						self.stopPlayer()
 					continue
-				command = raw_input("$ ")
+				command = input("$ ")
 				if (command == "1"):
 					self.players[self.turn].add(self.deck.draw())
 					self.players[self.turn].displayCards()

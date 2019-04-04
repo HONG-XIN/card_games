@@ -21,7 +21,7 @@ class Panel:
 		print("#############################################################")
 		g = Game(self.game)
 		while True:
-			command = raw_input('$ ')
+			command = input('$ ')
 			if (command == "up"):
 				self.main_menu()
 				break
@@ -82,7 +82,7 @@ class Panel:
 		print(">>> up                      <<<")
 		print("###############################")
 		while True:
-			command = raw_input('$ ')
+			command = input('$ ')
 			if (command == "up"):
 				self.run()
 				break
@@ -99,7 +99,7 @@ class Panel:
 		print(">>> exit       <<<")
 		print("##################")
 		while True:
-			command = raw_input('$ ')
+			command = input('$ ')
 			if (command == "exit"):
 				break
 			elif (command == "play"):
