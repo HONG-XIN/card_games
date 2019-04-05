@@ -14,7 +14,7 @@ class Deck:
 		self.deckPile = []
 		self.drawPile = []
 		for i in range(self.numOfDeck):
-			for color in ["spades", "hearts", "club", "diamond"]:
+			for color in ["spades", "hearts", "clubs", "diamonds"]:
 				for number in ["A",2,3,4,5,6,7,8,9,10,"J","Q","K"]:
 					self.deckPile.append(Card(number, color))
 
