@@ -3,3 +3,6 @@
 
 # ignore python virtualenv
 venv/
+
+# ignore macOS compiled files
+*.DS_Store
