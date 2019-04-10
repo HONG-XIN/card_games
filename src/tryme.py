@@ -1,5 +1,7 @@
+from game import Game
 from game_blackjack import Game_Blackjack
 
-g = Game_Blackjack()
-g.start()
-print(g.get_winner())
+g = Game()
+g.test()
+g.__class__ = Game_Blackjack
+g.test()

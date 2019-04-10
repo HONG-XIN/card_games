@@ -305,7 +305,7 @@ class App(QWidget):
 	def _blackjack_draw(self):
 		self.game_blackjack.deck_draw_one()
 		self._blackjack_show_cards()
-		if self.game_blackjack.if_end():
+		if self.game_blackjack.get_if_end():
 			self._blackjack_show_result()
 
 	def _blackjack_stop(self):
